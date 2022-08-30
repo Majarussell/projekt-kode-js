@@ -26,3 +26,34 @@ p {
 .shopbtn:hover {
  background: #e7e7e7;
 }
+
+
+
+
+/***** Header Styling *****/
+header {
+  display:  flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header i {
+  font-size: 25px;
+  margin: 10px;
+  padding-block: 10px;
+}
+
+header svg {
+  max-width: 120px;
+}
+
+.icon-list {
+  display: flex;
+}
+
+
+
+/***** Utility Classes *****/
+.invisible {
+    visibility: hidden;
+}
