@@ -20,12 +20,9 @@ p {
 .shopbtn {
  border-color: #e7e7e7;
  color: black;
+ border-radius: 5px;
 }
 
 .shopbtn:hover {
  background: #e7e7e7;
-}
-
-.btn {
-  border-radius: 5px;
 }
