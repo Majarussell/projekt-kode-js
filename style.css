@@ -23,7 +23,7 @@ p {
 .left-centered {
   position: absolute;
   top: 50%;
-  left: 10%
+  left: 30%;
   transfor: translate(-50%, 50%);
 }
 
@@ -80,7 +80,7 @@ header svg {
 }
 
 input:not([type="checkbox"]) {
-  border: 2px solid black;
+  border: 2px solid #f1f1f1;
   display: inline-block;
   width: 100%;
   padding: 0.5rem 0.5rem 0.5rem 0;
@@ -102,6 +102,9 @@ input:not([type="checkbox"]) {
 .socials-service {
   background-color: #F3F3F3;
   padding: 24px;
+  font-weight: lighter;
+  font-size: 10;
+  color: #f9f9f9;
 }
 
 ul.footer-socials-list {
