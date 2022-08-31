@@ -1,4 +1,4 @@
-* {
+*:where(:not(input[type="checkbox"])) {
   all: unset;
   display: revert;
   box-sizing: border-box;
@@ -14,6 +14,10 @@ img {
 
 body {
   background-color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  margin-bottom: 12px;
 }
 
 h1,h2,h3,h4 {
@@ -87,22 +91,34 @@ header svg {
 }
 
 input:not([type="checkbox"]) {
-  border: 2px solid #f1f1f1;
+  border: 1px solid #dddddd;
   display: inline-block;
   width: 100%;
   padding: 16px;
-  margin-block: 1rem;
+  margin-block: 8px;
   background-color: #ffffff;
+}
+
+label:not(:last-of-type) {
+  text-transform: uppercase;
 }
 
 .icon-list {
   display: flex;
 }
 
+.samtykke {
+  margin-block: 16px;
+}
+
 
 
 /***** Footer Styling *****/
-ul.socials-service {
+ul.footer-socials-list {
+  list-style-type: none;
+}
+
+ul.about-only {
   list-style-type: none;
 }
 
@@ -113,6 +129,11 @@ ul.socials-service {
   font-size: 10px;
   color: #7b7b7c;
 }
+
+.about-only-list {
+  font-size: 14px;
+}
+
 
 
 
