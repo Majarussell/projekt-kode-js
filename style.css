@@ -73,6 +73,14 @@ header svg {
   max-width: 120px;
 }
 
+input {
+  border-bottom: 2px solid black;
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  margin-block: 1rem;
+}
+
 .icon-list {
   display: flex;
 }
@@ -83,6 +91,11 @@ header svg {
 /***** Utility Classes *****/
 .invisible {
     visibility: hidden;
+}
+
+.socials-service {
+  background-color: #F3F3F3;
+  padding: 24px;
 }
 
 ul.footer-socials-list {
