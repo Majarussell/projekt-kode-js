@@ -251,9 +251,9 @@ ul.footer-socials-list {
 }
 
 @media only screen and (min-width: 768px) {
-.link-list {
-  grid-template-columns: 1fr 1fr 1fr;
-}
+  .link-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 
