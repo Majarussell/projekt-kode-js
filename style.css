@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: sans-serif;
+}
+
 li {
   list-style-type: none;
 }
@@ -168,6 +172,7 @@ ul.footer-socials-list {
   text-transform: uppercase;
   text-align: center;
   margin-top: 5px;
+  padding: 25px;
 }
 
 .footer-socials-list i {
@@ -176,10 +181,14 @@ ul.footer-socials-list {
 }
 
 .footer-copy-cookies {
-  background-color: #4d4d4d;
-  color: #8a8a8a;
-  font-size: 10px;
+  background-color: #7d7d7d;
+  color: #adadad;
+  font-size: 8px;
   text-transform: uppercase;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .cookies {
