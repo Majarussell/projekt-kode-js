@@ -24,7 +24,7 @@ p {
 .centered {
   position: absolute;
   top: 50%;
-  right: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -73,7 +73,8 @@ header svg {
   max-width: 120px;
 }
 
-input {
+input,
+  label{
   border-bottom: 2px solid black;
   display: inline-block;
   width: 100%;
