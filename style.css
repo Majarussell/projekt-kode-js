@@ -239,7 +239,7 @@ ul.footer-socials-list {
 
 .footer-socials-list i {
   margin: 10px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .footer-copy-cookies {
@@ -324,31 +324,8 @@ ul.footer-socials-list {
   .image12,
   .image13 {
     min-height: 500px;
-    /* max-height: 500px; */
     overflow: hidden;
   }
-
-  /* .banner {
-    min-height: 500px;
-    overflow: hidden;
-  }
-
-  .banner img:not(.invisible) {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    min-height: 500px;
-    transform: translate(-50%, -50%);
-    max-width: revert;
-  } */
-
-  /* .image-section .invisible {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    min-height: 500px;
-    transform: translate(-50%, -50%);
-  } */
 
   .tekst-container {
     min-height: 500px;
@@ -417,6 +394,24 @@ ul.footer-socials-list {
   }
 
 
+  /***** Contact Form *****/
+  .tilmeld-formular {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+
+  .inspiration-fra {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /***** help list *****/
+  .list-til-nederst {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px;
+  }
 
   /***** Footer Styling *****/
   .footer-socials-list {
