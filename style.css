@@ -1,3 +1,9 @@
+* {
+  all: unset;
+  display: revert;
+  box-sizing: border-box;
+}
+
 a{
   cursor: pointer;
 }
@@ -23,8 +29,8 @@ p {
 .left-centered {
   position: absolute;
   top: 50%;
-  left: 30%;
-  transfor: translate(-50%, 50%);
+  left: 2%;
+  transform: translateY(-50%);
 }
 
 .centered {
@@ -62,6 +68,7 @@ p {
 }
 
 
+
 /***** Header Styling *****/
 header {
   display:  flex;
@@ -83,8 +90,9 @@ input:not([type="checkbox"]) {
   border: 2px solid #f1f1f1;
   display: inline-block;
   width: 100%;
-  padding: 0.5rem 0.5rem 0.5rem 0;
+  padding: 16px;
   margin-block: 1rem;
+  background-color: #ffffff;
 }
 
 .icon-list {
@@ -93,23 +101,28 @@ input:not([type="checkbox"]) {
 
 
 
-
-/***** Utility Classes *****/
-.invisible {
-    visibility: hidden;
+/***** Footer Styling *****/
+ul.socials-service {
+  list-style-type: none;
 }
 
 .socials-service {
   background-color: #F3F3F3;
   padding: 24px;
   font-weight: lighter;
-  font-size: 10;
-  color: #f9f9f9;
+  font-size: 10px;
+  color: #7b7b7c;
 }
 
-ul.footer-socials-list {
-  list-style-type: none;
 
+
+/***** Utility Classes *****/
+.invisible {
+    visibility: hidden;
+}
+
+.text-center {
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
