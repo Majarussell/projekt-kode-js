@@ -81,19 +81,19 @@ p {
 
 .shopbtn {
   background-color: #FFFFFF;
- border: none;
- color: black;
- padding: 15px 32px;
- text-align: center;
- text-decoration: none;
- display: inline-block;
- font-size: 16px;
- font-weight: Bold;
- margin: 0.5rem;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: Bold;
+  margin: 0.5rem;
 }
 
 .shopbtn:hover {
- background: #F3F3F3;
+  background: #F3F3F3;
 }
 
 .contact-box {
@@ -101,11 +101,18 @@ p {
   padding: 24px;
 }
 
+.link-list li {
+  background: #F3F3F3;
+  padding: 7px 14px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
 .link-list {
-background: #F3F3F3;
-padding: 7px 14px;
-border-radius: 5px;
-text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 20px;
 }
 
 /***** Header Styling *****/
@@ -160,6 +167,7 @@ ul.footer-socials-list {
   color: #7b7b7c;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 5px;
 }
 
 .footer-socials-list i {
@@ -167,14 +175,16 @@ ul.footer-socials-list {
   font-size: 20px;
 }
 
-.footer-only-cookies {
+.footer-copy-cookies {
   background-color: #4d4d4d;
   color: #8a8a8a;
   font-size: 10px;
   text-transform: uppercase;
 }
 
-
+.cookies {
+  text-align: right;
+}
 
 
 /***** Utility Classes *****/
