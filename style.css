@@ -22,8 +22,8 @@ p {
 
 .centered {
   position: absolute;
-  bottom: 50%;
-  right: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -84,8 +84,9 @@ header svg {
     visibility: hidden;
 }
 
-.footer-socials-list {
+ul.footer-socials-list {
   list-style-type: none;
+
 }
 
 @media only screen and (min-width: 768px) {
