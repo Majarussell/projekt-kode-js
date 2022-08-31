@@ -20,7 +20,13 @@ p {
  font-size: 14px;
 }
 
-.left-centered {}
+.left-centered {
+  position: absolute;
+  top: 50%;
+  left: 10%
+  transfor:
+}
+
 .centered {
   position: absolute;
   top: 50%;
@@ -47,7 +53,7 @@ p {
 }
 
 .shopbtn:hover {
- background: #F6F6F6;
+ background: #F3F3F3;
 }
 
 .contact-box {
@@ -75,7 +81,7 @@ header svg {
 
 input,
   label{
-  border-bottom: 2px solid black;
+  border: 2px solid black;
   display: inline-block;
   width: 100%;
   padding: 0.5rem 0.5rem 0.5rem 0;
