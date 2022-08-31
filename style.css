@@ -14,6 +14,7 @@ img {
 
 body {
   background-color: #FFFFFF;
+  padding-inline: 16px;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -60,6 +61,7 @@ p {
  display: inline-block;
  font-size: 16px;
  font-weight: Bold;
+ margin: 0.5rem;
 }
 
 .shopbtn:hover {
