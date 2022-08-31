@@ -24,7 +24,7 @@ p {
   position: absolute;
   top: 50%;
   left: 10%
-  transfor:
+  transfor: translate(-50%, 50%);
 }
 
 .centered {
@@ -79,8 +79,7 @@ header svg {
   max-width: 120px;
 }
 
-input,
-  label{
+input:not([type="checkbox"]) {
   border: 2px solid black;
   display: inline-block;
   width: 100%;
