@@ -48,7 +48,7 @@ p {
   overflow: hidden;
 }
 
-.banner img {
+.banner img:not(.invisible) {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -104,6 +104,24 @@ p {
 .shopbtn:hover {
   background: #F3F3F3;
 }
+
+.transbtn {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: Bold;
+  margin: 0.5rem;
+}
+
+.transbtn:hover {
+  background: #F3F3F3;
+}
+
 
 .list-til-nederst {
   background-color: #fafafa;
@@ -275,5 +293,86 @@ ul.footer-socials-list {
 @media only screen and (min-width: 1024px) {
   .link-list {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .image-section {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-areas: "banner banner banner banner banner banner banner banner banner banner banner banner"
+    "image1 image1 image1 image1 image1 image1 image2 image2 image2 image2 image2 image2"
+      "image3 image3 image3 image3 image4 image4 image4 image4 image5 image5 image5 image5"
+      "image6 image6 image6 image6 image6 image6 image7 image7 image7 image7 image7 image7"
+      "image8 image8 image8 image8 image8 image8 image8 image8 image8 image8 image8 image8"
+      "image9 image9 image9 image10 image10 image10 image11 image11 image11 image12 image12 image12"
+      "image13 image13 image13 image13 image13 image13 image13 image13 image13 image13 image13 image13";
+  }
+
+  .banner {
+    grid-area: banner;
+  }
+
+  .image1 {
+    grid-area: image1;
+  }
+
+  .image2 {
+    grid-area: image2;
+  }
+
+  .image3 {
+    grid-area: image3;
+  }
+
+  .image4 {
+    grid-area: image4;
+  }
+
+  .image5 {
+    grid-area: image5;
+  }
+
+  .image6 {
+    grid-area: image6;
+  }
+
+  .image7 {
+    grid-area: image7;
+  }
+
+  .image8 {
+    grid-area: image8;
+  }
+
+  .image9 {
+    grid-area: image9;
+  }
+
+  .image10 {
+    grid-area: image10;
+  }
+
+  .image11 {
+    grid-area: image11;
+  }
+
+  .image12 {
+    grid-area: image12;
+  }
+
+  .image13 {
+    grid-area: image13;
+  }
+
+
+
+  /***** Footer Styling *****/
+  .footer-socials-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .socials-service {
+    text-align: left;
   }
 }
