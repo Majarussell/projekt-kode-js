@@ -1,7 +1,11 @@
-*:where(:not(input[type="checkbox"])) {
+*:where(:not(input[type="checkbox"])):not(svg *) {
   all: unset;
   display: revert;
   box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
 }
 
 a{
@@ -29,6 +33,30 @@ h1,h2,h3,h4 {
 p {
  font-family: sans-serif;
  font-size: 14px;
+}
+
+.banner {
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.banner img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  min-height: 500px;
+  max-height: 100%;
+  transform: translate(-50%, -50%);
+  max-width: revert;
+}
+
+.sign-up-button {
+  background-color: #6a6a6a;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+  text-transform: uppercase;
 }
 
 .left-centered {
@@ -73,7 +101,12 @@ p {
   padding: 24px;
 }
 
-
+.link-list {
+background: #F3F3F3;
+padding: 7px 14px;
+border-radius: 5px;
+text-transform: uppercase;
+}
 
 /***** Header Styling *****/
 header {
@@ -120,20 +153,25 @@ ul.footer-socials-list {
   list-style-type: none;
 }
 
-ul.about-only {
-  list-style-type: none;
-}
-
 .socials-service {
   background-color: #F3F3F3;
-  padding: 24px;
   font-weight: lighter;
-  font-size: 10px;
+  font-size: 15px;
   color: #7b7b7c;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.about-only-list {
-  font-size: 14px;
+.footer-socials-list i {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.footer-only-cookies {
+  background-color: #4d4d4d;
+  color: #8a8a8a;
+  font-size: 10px;
+  text-transform: uppercase;
 }
 
 
