@@ -20,11 +20,17 @@ p {
  font-size: 14px;
 }
 
+.centered {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  transform: translate(-50%, -50%);
+}
+
 .tekst-container {
   color: #ffffff;
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
+  position: relative;
+  text-align: center;
 }
 
 .shopbtn {
@@ -36,10 +42,11 @@ p {
  text-decoration: none;
  display: inline-block;
  font-size: 16px;
+ font-weight: Bold;
 }
 
 .shopbtn:hover {
- background: #e7e7e7;
+ background: #F6F6F6;
 }
 
 .contact-box {
@@ -71,9 +78,14 @@ header svg {
 
 
 
+
 /***** Utility Classes *****/
 .invisible {
     visibility: hidden;
+}
+
+.footer-socials-list {
+
 }
 
 @media only screen and (min-width: 768px) {
