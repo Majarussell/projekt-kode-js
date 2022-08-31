@@ -53,9 +53,8 @@ p {
   left: 50%;
   top: 50%;
   min-height: 500px;
-  max-height: 100%;
   transform: translate(-50%, -50%);
-  max-width: revert;
+  object-fit: cover;
 }
 
 .sign-up-button {
@@ -85,7 +84,7 @@ p {
   color: #ffffff;
   position: relative;
   text-align: center;
-  margin-block: 12px;
+  margin-block: 5px;
 }
 
 .shopbtn {
@@ -309,6 +308,60 @@ ul.footer-socials-list {
 
   .banner {
     grid-area: banner;
+  }
+
+  .image1,
+  .image2,
+  .image3,
+  .image4,
+  .image5,
+  .image6,
+  .image7,
+  .image8,
+  .image9,
+  .image10,
+  .image11,
+  .image12,
+  .image13 {
+    min-height: 500px;
+    /* max-height: 500px; */
+    overflow: hidden;
+  }
+
+  /* .banner {
+    min-height: 500px;
+    overflow: hidden;
+  }
+
+  .banner img:not(.invisible) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    min-height: 500px;
+    transform: translate(-50%, -50%);
+    max-width: revert;
+  } */
+
+  /* .image-section .invisible {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    min-height: 500px;
+    transform: translate(-50%, -50%);
+  } */
+
+  .tekst-container {
+    min-height: 500px;
+    overflow: hidden;
+  }
+
+  .tekst-container img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    min-height: 500px;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
   }
 
   .image1 {
