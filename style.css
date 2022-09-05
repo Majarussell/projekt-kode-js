@@ -8,6 +8,11 @@ html {
   font-family: sans-serif;
 }
 
+body {
+  background-color: #FFFFFF;
+  position: relative;
+}
+
 li {
   list-style-type: none;
 }
@@ -18,10 +23,6 @@ a{
 
 img {
   max-width: 100%;
-}
-
-body {
-  background-color: #FFFFFF;
 }
 
 section {
@@ -180,8 +181,8 @@ p {
 
 /***** Header Styling *****/
 header {
-  display:  flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
 }
 
@@ -193,9 +194,10 @@ header i {
 
 header svg {
   max-width: 120px;
+  text-align: center;
 }
 
-input:not([type="checkbox"]) {
+input:where(:not([type="checkbox"])) {
   border: 1px solid #dddddd;
   display: inline-block;
   width: 100%;
@@ -210,12 +212,16 @@ label:not(:last-of-type) {
 
 .icon-list {
   display: flex;
+  justify-content: flex-end;
 }
 
 .samtykke {
   margin-block: 16px;
 }
 
+.search-field {
+  width: 250px;
+}
 
 
 /***** Footer Styling *****/
@@ -258,14 +264,42 @@ ul.footer-socials-list {
 }
 
 
+/***** Jump to top button *****/
+.jump-button {
+  border-radius: 50px;
+  height: 35px;
+  width: 35px;
+  z-index: 99;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: white;
+  box-shadow: 2px 3px 7px #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
 /***** Utility Classes *****/
 .invisible {
     visibility: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 .text-center {
   text-align: center;
 }
+
+.flex-right {
+  display: flex;
+  justify-content: right;
+}
+
 
 @media only screen and (min-width: 768px) {
   .link-list {
@@ -423,4 +457,43 @@ ul.footer-socials-list {
   .socials-service {
     text-align: left;
   }
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-container input {
+  /* margin-bottom: 0; */
+}
+
+.search-dropdown {
+  max-height: 300px;
+  margin-top: -15px;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 3px 5px 5px #45454588;
+  padding: 10px 25px;
+  overflow: scroll;
+}
+
+
+.search-item {
+  display: flex;
+  align-items: center;
+  margin-block: 5px;
+  cursor: pointer;
+}
+
+.search-item p {
+  margin: 0;
+}
+
+.search-item i {
+  font-size: 12px;
+  opacity: 0.5;
+  margin: 0;
+  margin-left: 15px;
 }
