@@ -82,11 +82,6 @@ searchField.addEventListener('keyup', (event) => {
 
 
 
-
-
-
-
-
 let elements = document.querySelectorAll('.banner-image')
 
 elements.forEach((item, i) => {
