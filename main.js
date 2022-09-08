@@ -1,5 +1,4 @@
 const jumpButton = document.getElementById("jump-button")
-const searchField = document.getElementById('search-field')
 
 
 const scrollToTop = () => {
@@ -20,10 +19,16 @@ window.addEventListener("scroll", () => {
 });
 
 
+
+
+
+
+
 const baseURL = 'https://prod.only.com/da-dk/search?useNewIndex=true&q='
 
 const produktListe = ["jakker", "overgangsjakker", "trenchcoats", "shackets", "læder og læderlook jakker", "denimjakker", "regnjakker", "veste", "jeans", "skinny jeans", "flared jeans", "straight jeans", "wide jeans", "high waist jeans", "normal waist jeans", "low waist jeans", "ripped jeans", "kjoler", "midikjoler", "maxikjoler", "slå-om-kjoler", "denimkjoler", "skjortekjoler", "sweatkjoler", "cardigans", "striktrøjer", "toppe", "armløse", "kortærmede trøjer", "tshirts", "langærmede trøjer", "printede toppe", "bodystockings", "crop-top", "crop-toppe", "bukser", "klassiske bukser", "leggings", "sweatpants", "poptrash", "bukser med vidde", "skjorter", "denimskjorter", "skjorter med detaljer", "blazere", "sweatshirts", "crewnecks", "hoodies", "hættetrøjer", "nederdele", "midinederdele", "lange nederdele", "lædernederdele", "denimnederdele", "jumpsuits", "shorts", "denimshorts", "bikeshorts", "højtaljede shorts", "sweatshorts", "accessories", "tasker", "bælter", "solbriller", "sko", "støvler", "sneakers", "høje hæle", "sandaler", "lingeri", "nattøj", "badetøj", "loungewear"]
 
+const searchField = document.getElementById('search-field')
 const searchDropdown = document.getElementById('search-dropdown')
 const hiddenDropdown = document.querySelector('.search-item.hidden')
 let produkter = [];
@@ -77,29 +82,22 @@ searchField.addEventListener('keyup', (event) => {
 
 
 
-// let slideIndex = 1;
-// showSlides(slideIndex);
-//
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
-// 
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-//
-// function showSlides(n) {
-//   let i;
-//   let slides = document.getElementsByClassName("mySlides");
-//   let dots = document.getElementsByClassName("dot");
-//   if (n > slides.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex-1].style.display = "block";
-//   dots[slideIndex-1].className += " active";
-// }
+
+
+
+
+
+let elements = document.querySelectorAll('.banner-image')
+
+elements.forEach((item, i) => {
+  item.animate([
+    { transform: 'translateX(0)' },
+    { transform: 'translateX(0)' },
+    { transform: 'translateX(-100vw)' },
+    { transform: 'translateX(-100vw)' },
+    { transform: 'translateX(0)' },
+  ], {
+    duration: 15000,
+    iterations: 999999999999,
+  })
+});
